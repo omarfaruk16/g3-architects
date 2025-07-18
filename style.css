@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shared css */
+.flex{
+    display: flex;
+}
+
+
+/* Global */
+h3{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+h1{
+    font-size: 3.5em;
+}
+.btn-main{
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 25px;
+    color: white;
+}
+
+/* header */
+
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+}
+header .content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 55px;
+    text-align: center;
+}
+header .nav{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .menu li{
+    list-style: none;
+}
+
+.nav .menu a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.2em;
+    padding: 0 .8em;
+}
+.inner_content{
+    margin-top: 5em;
+}
+.inner_content .title{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.inner_content .title p{
+    margin: 20px 0px;
+}
+.content img{
+    width: 100%;
+    margin: 30px 0px;
+}
+
+@media screen and (max-width: 576px) {
+    .nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    
+    header .content{
+        padding-top: 20px;
+    }
+    .inner_content{
+        margin-top: 2em;
+    }
+}
