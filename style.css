@@ -23,12 +23,22 @@ h3{
 h1{
     font-size: 3.5em;
 }
+h4{
+    font-size: 2em;
+    margin: 20px 0px;
+    color: #727272;
+}
+
+p{
+    margin: 10px 0px;
+}
 .btn-main{
     background-color: #FF900E;
     border: none;
     border-radius: 8px;
     padding: 15px 25px;
     color: white;
+    margin: 10px 0px;
 }
 
 /* header */
@@ -96,5 +106,60 @@ header .nav{
     .content img{
         width: calc( 100% - 10px );
         padding: 0px 5px;
+    }
+}
+
+
+/* main */
+
+/*teams*/
+
+.team{
+    max-width: 1000px;
+    margin: 80px auto;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.team .images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 50%;
+}
+
+.team .content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.team .content .inner_content{
+    padding-left: 20px;
+
+}
+.team .images img{
+    width: 100%;
+}
+#of_our{
+    color: black;
+    font-weight: 800;
+}
+#features{
+    color: #FF900E;
+}
+
+@media screen and (max-width: 576px) {
+    .team{
+        flex-direction: column-reverse;
+        
+    }
+    .team .images, .team .content{
+        width: calc( 100% - 10px );
+        margin: 0px 5px;
+    }
+    .team .content{
+        padding-right: 20px;
+        margin-bottom: 20px;
     }
 }
