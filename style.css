@@ -216,5 +216,57 @@ header .nav{
     }
     .features .images img{
         padding: 0px;
+        width: 100%;
+    }
+}
+
+/* some facts */
+.some_facts{
+    width: 1000px;
+    margin: 0px auto;
+    margin-top: 70px;
+}
+
+.some_facts .title{
+    width: 500px;
+}
+.title h4{
+    color: #131313;
+}
+
+.some_facts .facts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+.facts .fact_box{
+    padding: 25px 20px;
+    width: 140px;
+    text-align: center;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+}
+.facts h5{
+    font-size: 2em;
+    margin: 20px 0px;
+}
+
+@media screen and (max-width:576px) {
+    .some_facts{
+        width: 90%;
+    }
+    .some_facts .title{
+        width: 100%;
+    }
+    .some_facts .facts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .facts .fact_box{
+        padding: 25px 10px;
+        width: 140px;
+        text-align: center;
+        border: 2px solid #FF900E;
+        border-radius: 8px;
     }
 }
