@@ -83,11 +83,18 @@ header .nav{
     h3{
         font-size: 1.5em;
     }
-    
+
     header .content{
         padding-top: 20px;
     }
     .inner_content{
         margin-top: 2em;
+    }
+    .nav ul li{
+        font-size: .8em;
+    }
+    .content img{
+        width: calc( 100% - 10px );
+        padding: 0px 5px;
     }
 }
