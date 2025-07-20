@@ -47,6 +47,11 @@ p{
     padding: 15px 25px;
     color: white;
     margin: 10px 0px;
+    cursor: pointer;
+}
+.btn-main:hover{
+    transform: scale(1.2);
+    transition: .4s;
 }
 
 /* header */
@@ -298,6 +303,11 @@ header .nav{
     max-width: 120px;
     height: auto;
     filter: grayscale(100%);
+    cursor: pointer;
+}
+.boxs>img:hover{
+    transform: scale(1.2);
+    transition: .4s;
 }
 
 @media screen and (max-width:576px) {
