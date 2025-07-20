@@ -254,13 +254,14 @@ header .nav{
 
 @media screen and (max-width:576px) {
     .some_facts{
-        width: 90%;
+        width: calc( 100% - 20px) ;
     }
     .some_facts .title{
         width: 100%;
     }
     .some_facts .facts{
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
     .facts .fact_box{
         padding: 25px 10px;
@@ -269,4 +270,46 @@ header .nav{
         border: 2px solid #FF900E;
         border-radius: 8px;
     }
+}
+
+.sponsers{
+    max-width: 1000px;
+    margin:130px auto;
+    text-align: center;
+}
+.sponsers .title{
+    display: flex;
+    justify-content: center;
+}
+
+.sponsers .inner_box{
+    max-width: 540px;
+}
+.boxs{
+    display: flex;
+    justify-content: space-between;
+}
+.boxs>img {
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width:576px) {
+    .sponsers{
+        margin: 50px auto;
+    }
+    .sponsers .inner_box{
+        width: 100%;
+    }
+    .boxs{
+        width: calc( 100% - 10px);
+        margin: 30px 5px;
+        justify-content: space-around;
+    }
+    .boxs>img{
+        width: 50px;
+        height: auto;
+    }
+
 }
