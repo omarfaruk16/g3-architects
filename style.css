@@ -288,6 +288,7 @@ header .nav{
 .boxs{
     display: flex;
     justify-content: space-between;
+    margin: 30px 0px;
 }
 .boxs>img {
     max-width: 120px;
